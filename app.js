@@ -111,6 +111,7 @@ var taskIncomplete = function () {
   //Append the task list item to the #incompleteTasks.
   var listItem = this.parentNode;
   incompleteTaskHolder.appendChild(listItem);
+  listItem.classList.remove("todo-block__tasks-list_completed");
   bindTaskEvents(listItem,taskCompleted);
 }
 
